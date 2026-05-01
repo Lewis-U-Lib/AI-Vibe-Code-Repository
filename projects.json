@@ -1,0 +1,638 @@
+{
+  "schema_version": "1.2",
+  "repository": "Lewis University Library AI Vibe Code Repository",
+  "description": "Example project dataset using the canonical AI Vibe Code Repository metadata model. Categories are application types; projects are interactive, browser-based tools built through human expertise and AI-assisted code generation.",
+  "categories": {
+    "Decision Tool": {
+      "icon": "🧭",
+      "color": "var(--catFramework)"
+    },
+    "Simulation": {
+      "icon": "🩺",
+      "color": "var(--catApp)"
+    },
+    "Visualization": {
+      "icon": "📈",
+      "color": "var(--catGuide)"
+    },
+    "Reference Tool": {
+      "icon": "🔎",
+      "color": "var(--catPrompt)"
+    },
+    "Interactive Lab": {
+      "icon": "🧪",
+      "color": "var(--catRubric)"
+    },
+    "Analysis Tool": {
+      "icon": "🧠",
+      "color": "var(--catPolicy)"
+    },
+    "Creation Tool": {
+      "icon": "✍️",
+      "color": "var(--catWorkflow)"
+    },
+    "Calculator": {
+      "icon": "🧮",
+      "color": "var(--catGov)"
+    },
+    "Game": {
+      "icon": "🎮",
+      "color": "var(--catInterdisc)"
+    },
+    "Discussion Tool": {
+      "icon": "💬",
+      "color": "var(--catLesson)"
+    },
+    "Student Support": {
+      "icon": "🌱",
+      "color": "var(--catPrompt)"
+    },
+    "Faculty Development": {
+      "icon": "🎓",
+      "color": "var(--catFramework)"
+    },
+    "Workflow Tool": {
+      "icon": "🔄",
+      "color": "var(--catWorkflow)"
+    },
+    "Accessibility Tool": {
+      "icon": "♿",
+      "color": "var(--catGuide)"
+    }
+  },
+  "projects": [
+    {
+      "id": "faculty-ai-evaluation-toolkit",
+      "title": "Faculty AI Evaluation Toolkit",
+      "description": "A decision-support application that helps faculty evaluate classroom, research, and administrative AI use cases by aligning direct contextual needs with tool affordances, risk considerations, and teaching goals.",
+      "author": "Jake Bailey",
+      "department": "Lewis University Library",
+      "role": "Librarian",
+      "disciplines": [
+        "All Disciplines"
+      ],
+      "scope": "University-Wide",
+      "audience": [
+        "Faculty",
+        "Librarians",
+        "Administrators"
+      ],
+      "ai_tools": [
+        "Claude",
+        "ChatGPT",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Decision Tool",
+      "date_submitted": "2026-04-28",
+      "live_url": "https://lewis-u-lib.github.io/Faculty-AI-Toolkit/",
+      "source_url": "https://github.com/lewis-u-lib/Faculty-AI-Toolkit",
+      "tags": [
+        "ai-literacy",
+        "faculty-development",
+        "decision-tool",
+        "teaching",
+        "context-first"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "blooms_level": "Evaluate",
+      "license": "MIT",
+      "purpose": "Support context-sensitive AI tool selection for teaching, learning, research, and university work.",
+      "ai_role": "AI assisted with interface scaffolding, use-case synthesis, rule organization, and iterative code revisions; library expertise shaped criteria, language, citations, and review logic.",
+      "human_review": "Reviewed for usability, citation logic, link integrity, accessibility, and alignment with faculty support needs.",
+      "accessibility_notes": "Includes keyboard-accessible controls, responsive typography, and visible focus states."
+    },
+    {
+      "id": "clinical-scenario-builder",
+      "title": "Clinical Scenario Builder",
+      "description": "An interactive nursing simulation generator that helps instructors create patient scenarios, assessment prompts, and debrief questions for skills lab or classroom discussion without using real patient data.",
+      "author": "Dr. Maria Santos",
+      "department": "College of Nursing & Health Sciences",
+      "role": "Faculty",
+      "disciplines": [
+        "Nursing",
+        "Health Sciences"
+      ],
+      "scope": "Course-Level",
+      "audience": [
+        "Faculty",
+        "Students"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Simulation",
+      "date_submitted": "2026-04-20",
+      "live_url": "https://lewis-u-lib.github.io/clinical-scenario-builder/",
+      "source_url": "https://github.com/lewis-u-lib/clinical-scenario-builder",
+      "tags": [
+        "nursing",
+        "simulation",
+        "clinical-reasoning",
+        "debrief",
+        "case-based-learning"
+      ],
+      "status": "published",
+      "interdisciplinary": false,
+      "blooms_level": "Apply",
+      "license": "MIT",
+      "purpose": "Give instructors a reusable way to design safe, fictional practice scenarios for clinical reasoning.",
+      "ai_role": "AI generated interface drafts and scenario template variations; faculty reviewed clinical accuracy and removed protected-data risks.",
+      "human_review": "Checked for fictionalized patient details, nursing relevance, and classroom usability.",
+      "accessibility_notes": "Plain-language prompts, high-contrast controls, and print-friendly scenario output."
+    },
+    {
+      "id": "aviation-weather-pattern-explorer",
+      "title": "Aviation Weather Pattern Explorer",
+      "description": "A visual training tool that lets aviation students explore how weather variables shape flight planning decisions through interactive diagrams, scenario cards, and reflective checks.",
+      "author": "Prof. Daniel Reyes",
+      "department": "Aviation & Transportation Studies",
+      "role": "Faculty",
+      "disciplines": [
+        "Aviation & Transportation",
+        "Natural Sciences"
+      ],
+      "scope": "Course-Level",
+      "audience": [
+        "Students",
+        "Faculty"
+      ],
+      "ai_tools": [
+        "Claude",
+        "Cursor"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Visualization",
+      "date_submitted": "2026-04-18",
+      "live_url": "https://lewis-u-lib.github.io/aviation-weather-pattern-explorer/",
+      "source_url": "https://github.com/lewis-u-lib/aviation-weather-pattern-explorer",
+      "tags": [
+        "aviation",
+        "weather",
+        "visualization",
+        "flight-planning",
+        "scenario-learning"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "blooms_level": "Analyze",
+      "license": "MIT",
+      "purpose": "Help students connect meteorological concepts to aviation decision-making.",
+      "ai_role": "AI assisted with diagram logic, scenario copy, and responsive layout; aviation expertise shaped safety framing and instructional sequence.",
+      "human_review": "Reviewed for conceptual accuracy and non-operational educational framing.",
+      "accessibility_notes": "Text alternatives for visual states and keyboard navigation for scenario panels."
+    },
+    {
+      "id": "citation-pathway-coach",
+      "title": "Citation Pathway Coach",
+      "description": "A library instruction tool that guides students through choosing when and how to cite sources, paraphrase responsibly, disclose AI assistance, and document research decisions.",
+      "author": "Lewis University Library Instruction Team",
+      "department": "Lewis University Library",
+      "role": "Librarians",
+      "disciplines": [
+        "All Disciplines"
+      ],
+      "scope": "University-Wide",
+      "audience": [
+        "Students",
+        "Faculty",
+        "Librarians"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Reference Tool",
+      "date_submitted": "2026-04-17",
+      "live_url": "https://lewis-u-lib.github.io/citation-pathway-coach/",
+      "source_url": "https://github.com/lewis-u-lib/citation-pathway-coach",
+      "tags": [
+        "citation",
+        "information-literacy",
+        "ai-disclosure",
+        "academic-integrity",
+        "research"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "blooms_level": "Understand",
+      "license": "MIT",
+      "purpose": "Support research transparency and citation decision-making across courses.",
+      "ai_role": "AI helped draft branching prompts and interface states; librarians edited for instruction tone, policy alignment, and citation clarity.",
+      "human_review": "Reviewed against library instruction outcomes and public-facing academic integrity language.",
+      "accessibility_notes": "Uses semantic buttons, clear labels, and short decision steps."
+    },
+    {
+      "id": "chemistry-lab-safety-scenario-studio",
+      "title": "Chemistry Lab Safety Scenario Studio",
+      "description": "An interactive lab-prep application where students identify hazards, select safety actions, and receive feedback before entering a wet-lab environment.",
+      "author": "Dr. Aisha Patel",
+      "department": "Chemistry",
+      "role": "Faculty",
+      "disciplines": [
+        "Natural Sciences",
+        "Education"
+      ],
+      "scope": "Course-Level",
+      "audience": [
+        "Students"
+      ],
+      "ai_tools": [
+        "Claude",
+        "GitHub Copilot"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Interactive Lab",
+      "date_submitted": "2026-04-16",
+      "live_url": "https://lewis-u-lib.github.io/chemistry-lab-safety-scenario-studio/",
+      "source_url": "https://github.com/lewis-u-lib/chemistry-lab-safety-scenario-studio",
+      "tags": [
+        "chemistry",
+        "lab-safety",
+        "scenario",
+        "pre-lab",
+        "feedback"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "blooms_level": "Apply",
+      "license": "MIT",
+      "purpose": "Improve safety readiness through practice before students encounter lab materials.",
+      "ai_role": "AI produced early hazard card structures and feedback language; faculty corrected safety content and simplified interactions.",
+      "human_review": "Checked by chemistry faculty for educational appropriateness and safety accuracy.",
+      "accessibility_notes": "Hazards are represented with text labels in addition to icons."
+    },
+    {
+      "id": "literature-review-mapper",
+      "title": "Literature Review Mapper",
+      "description": "A humanities and social sciences research tool that helps students organize article summaries into themes, tensions, methods, and evidence clusters for literature review planning.",
+      "author": "Dr. Lena Hartwell",
+      "department": "English Studies",
+      "role": "Faculty",
+      "disciplines": [
+        "Humanities",
+        "Social Sciences",
+        "Education"
+      ],
+      "scope": "Course-Level",
+      "audience": [
+        "Students",
+        "Faculty"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Cursor"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Analysis Tool",
+      "date_submitted": "2026-04-15",
+      "live_url": "https://lewis-u-lib.github.io/literature-review-mapper/",
+      "source_url": "https://github.com/lewis-u-lib/literature-review-mapper",
+      "tags": [
+        "literature-review",
+        "research",
+        "writing",
+        "themes",
+        "synthesis"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "blooms_level": "Analyze",
+      "license": "MIT",
+      "purpose": "Support synthesis-oriented research habits without automating the student's argument.",
+      "ai_role": "AI assisted with sorting interface prototypes and explanatory language; faculty revised the workflow to preserve student authorship and interpretation.",
+      "human_review": "Reviewed for writing pedagogy, student agency, and accessibility of research prompts.",
+      "accessibility_notes": "Cards can be moved through buttons rather than drag-and-drop alone."
+    },
+    {
+      "id": "assignment-ai-disclosure-builder",
+      "title": "Assignment AI Disclosure Builder",
+      "description": "A quick generator that helps faculty create assignment-specific AI-use statements, disclosure expectations, and student-facing guidance aligned with local course goals.",
+      "author": "Center for Teaching & Learning Excellence",
+      "department": "Academic Affairs",
+      "role": "Staff",
+      "disciplines": [
+        "All Disciplines"
+      ],
+      "scope": "University-Wide",
+      "audience": [
+        "Faculty",
+        "Instructional Designers"
+      ],
+      "ai_tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Creation Tool",
+      "date_submitted": "2026-04-14",
+      "live_url": "https://lewis-u-lib.github.io/assignment-ai-disclosure-builder/",
+      "source_url": "https://github.com/lewis-u-lib/assignment-ai-disclosure-builder",
+      "tags": [
+        "ai-disclosure",
+        "assignment-design",
+        "faculty",
+        "policy",
+        "teaching"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "blooms_level": "Create",
+      "license": "MIT",
+      "purpose": "Help instructors translate abstract AI guidance into clear assignment-level language.",
+      "ai_role": "AI generated wording variations and interface scaffolding; teaching-and-learning staff refined tone, boundaries, and course-level adaptability.",
+      "human_review": "Reviewed for clarity, flexibility, and alignment with institutional teaching support.",
+      "accessibility_notes": "Generated text appears in editable text areas with copy buttons and screen-reader labels."
+    },
+    {
+      "id": "confidence-interval-studio",
+      "title": "Confidence Interval Studio",
+      "description": "A statistics learning application that lets students adjust sample size, confidence level, and variability to see how intervals change and why interpretation matters.",
+      "author": "Dr. Minh Tran",
+      "department": "Mathematics & Statistics",
+      "role": "Faculty",
+      "disciplines": [
+        "Mathematics & Statistics",
+        "Business",
+        "Social Sciences"
+      ],
+      "scope": "Course-Level",
+      "audience": [
+        "Students"
+      ],
+      "ai_tools": [
+        "Claude",
+        "GitHub Copilot"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Calculator",
+      "date_submitted": "2026-04-13",
+      "live_url": "https://lewis-u-lib.github.io/confidence-interval-studio/",
+      "source_url": "https://github.com/lewis-u-lib/confidence-interval-studio",
+      "tags": [
+        "statistics",
+        "confidence-intervals",
+        "calculator",
+        "visualization",
+        "quantitative-literacy"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "blooms_level": "Understand",
+      "license": "MIT",
+      "purpose": "Make statistical estimation visible and interactive for introductory learners.",
+      "ai_role": "AI assisted with JavaScript calculation logic, UI variants, and explanatory text; faculty verified formulas and examples.",
+      "human_review": "Reviewed for calculation accuracy and instructional clarity.",
+      "accessibility_notes": "Results are announced in an aria-live region and visual changes include text equivalents."
+    },
+    {
+      "id": "cybersecurity-incident-response-game",
+      "title": "Cybersecurity Incident Response Game",
+      "description": "A branching, team-based game where students triage alerts, communicate decisions, and reflect on technical and ethical dimensions of cybersecurity incidents.",
+      "author": "Prof. Noah Williams",
+      "department": "Computer Science & IT",
+      "role": "Faculty",
+      "disciplines": [
+        "Computer Science & IT",
+        "Criminal Justice",
+        "Business"
+      ],
+      "scope": "Program-Level",
+      "audience": [
+        "Students"
+      ],
+      "ai_tools": [
+        "Cursor",
+        "Claude"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Game",
+      "date_submitted": "2026-04-12",
+      "live_url": "https://lewis-u-lib.github.io/cybersecurity-incident-response-game/",
+      "source_url": "https://github.com/lewis-u-lib/cybersecurity-incident-response-game",
+      "tags": [
+        "cybersecurity",
+        "incident-response",
+        "game",
+        "ethics",
+        "teamwork"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "blooms_level": "Evaluate",
+      "license": "MIT",
+      "purpose": "Practice response decision-making in a low-risk, discussion-rich simulation environment.",
+      "ai_role": "AI drafted branching story paths and UI components; faculty revised for disciplinary accuracy and non-sensitive scenarios.",
+      "human_review": "Reviewed to avoid operational exploit guidance and to foreground ethical reasoning.",
+      "accessibility_notes": "Playable with keyboard and includes non-timed mode."
+    },
+    {
+      "id": "ethical-case-debate-simulator",
+      "title": "Ethical Case Debate Simulator",
+      "description": "A discussion tool that presents layered ethical scenarios, assigns stakeholder perspectives, and helps students prepare evidence-based positions before class debate.",
+      "author": "Dr. Sophia Nguyen",
+      "department": "Philosophy & Theology",
+      "role": "Faculty",
+      "disciplines": [
+        "Humanities",
+        "Social Sciences",
+        "Health Sciences"
+      ],
+      "scope": "Course-Level",
+      "audience": [
+        "Students",
+        "Faculty"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Discussion Tool",
+      "date_submitted": "2026-04-11",
+      "live_url": "https://lewis-u-lib.github.io/ethical-case-debate-simulator/",
+      "source_url": "https://github.com/lewis-u-lib/ethical-case-debate-simulator",
+      "tags": [
+        "ethics",
+        "discussion",
+        "case-study",
+        "debate",
+        "stakeholders"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "blooms_level": "Evaluate",
+      "license": "MIT",
+      "purpose": "Prepare students to analyze ethical tensions through multiple perspectives before discussion.",
+      "ai_role": "AI helped generate neutral scenario scaffolds; faculty revised cases for nuance, fairness, and classroom fit.",
+      "human_review": "Reviewed for balanced representation of stakeholder positions and sensitivity of examples.",
+      "accessibility_notes": "Includes printable prompts and clear heading structure."
+    },
+    {
+      "id": "first-generation-resource-navigator",
+      "title": "First-Generation Resource Navigator",
+      "description": "A student-support application that helps first-generation students identify campus services, prepare questions, and map next steps based on common academic and belonging-related needs.",
+      "author": "Student Success Team",
+      "department": "Student Services",
+      "role": "Staff",
+      "disciplines": [
+        "Student Support",
+        "Education"
+      ],
+      "scope": "University-Wide",
+      "audience": [
+        "Students",
+        "Staff"
+      ],
+      "ai_tools": [
+        "Claude",
+        "Replit"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Student Support",
+      "date_submitted": "2026-04-10",
+      "live_url": "https://lewis-u-lib.github.io/first-generation-resource-navigator/",
+      "source_url": "https://github.com/lewis-u-lib/first-generation-resource-navigator",
+      "tags": [
+        "student-support",
+        "first-generation",
+        "resource-navigation",
+        "belonging",
+        "advising"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "blooms_level": "Apply",
+      "license": "MIT",
+      "purpose": "Reduce navigation friction by connecting common student questions to campus resources and next-step language.",
+      "ai_role": "AI assisted with flow design and approachable language; student-success staff reviewed resources and tone.",
+      "human_review": "Reviewed for resource accuracy, non-clinical framing, and student-centered language.",
+      "accessibility_notes": "Uses large tap targets, plain-language steps, and no required login."
+    },
+    {
+      "id": "course-ai-policy-builder",
+      "title": "Course AI Policy Builder",
+      "description": "A faculty-development tool that helps instructors create course-specific AI-use policies by selecting allowed practices, disclosure expectations, rationale, and assessment considerations.",
+      "author": "Dr. Priya Raman and Lewis University Library",
+      "department": "Center for Teaching & Learning Excellence",
+      "role": "Faculty / Librarian Collaboration",
+      "disciplines": [
+        "All Disciplines"
+      ],
+      "scope": "University-Wide",
+      "audience": [
+        "Faculty"
+      ],
+      "ai_tools": [
+        "Claude",
+        "ChatGPT",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Faculty Development",
+      "date_submitted": "2026-04-09",
+      "live_url": "https://lewis-u-lib.github.io/course-ai-policy-builder/",
+      "source_url": "https://github.com/lewis-u-lib/course-ai-policy-builder",
+      "tags": [
+        "faculty-development",
+        "course-policy",
+        "ai-literacy",
+        "syllabus",
+        "assessment"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "blooms_level": "Create",
+      "license": "MIT",
+      "purpose": "Help faculty make transparent, assignment-aware AI expectations visible to students.",
+      "ai_role": "AI generated draft policy language and conditional logic; faculty and librarians refined options for clarity and instructional nuance.",
+      "human_review": "Reviewed for student-facing clarity and institutional fit.",
+      "accessibility_notes": "Output is copyable, editable, and organized with headings."
+    },
+    {
+      "id": "library-instruction-request-planner",
+      "title": "Library Instruction Request Planner",
+      "description": "A workflow tool that helps faculty prepare a library instruction request by identifying course context, research skills, assignment timing, and desired student outcomes.",
+      "author": "Lewis University Library Instruction Team",
+      "department": "Lewis University Library",
+      "role": "Librarians",
+      "disciplines": [
+        "All Disciplines"
+      ],
+      "scope": "University-Wide",
+      "audience": [
+        "Faculty",
+        "Librarians"
+      ],
+      "ai_tools": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Workflow Tool",
+      "date_submitted": "2026-04-08",
+      "live_url": "https://lewis-u-lib.github.io/library-instruction-request-planner/",
+      "source_url": "https://github.com/lewis-u-lib/library-instruction-request-planner",
+      "tags": [
+        "library-instruction",
+        "workflow",
+        "information-literacy",
+        "faculty",
+        "planning"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "blooms_level": "Apply",
+      "license": "MIT",
+      "purpose": "Make library instruction requests more context-rich and easier to translate into active learning sessions.",
+      "ai_role": "AI assisted with intake flow and plain-language prompts; librarians refined instructional outcomes and routing language.",
+      "human_review": "Reviewed against library instruction workflow and service language.",
+      "accessibility_notes": "Form steps include labels, hints, and live summary output."
+    },
+    {
+      "id": "alt-text-practice-studio",
+      "title": "Alt Text Practice Studio",
+      "description": "An accessibility learning application that lets students and faculty practice writing alt text for different academic image types, compare versions, and reflect on context-specific description choices.",
+      "author": "Office of Accessibility and Lewis University Library",
+      "department": "Accessibility Services",
+      "role": "Staff / Librarian Collaboration",
+      "disciplines": [
+        "All Disciplines"
+      ],
+      "scope": "University-Wide",
+      "audience": [
+        "Students",
+        "Faculty",
+        "Staff"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Accessibility Tool",
+      "date_submitted": "2026-04-07",
+      "live_url": "https://lewis-u-lib.github.io/alt-text-practice-studio/",
+      "source_url": "https://github.com/lewis-u-lib/alt-text-practice-studio",
+      "tags": [
+        "accessibility",
+        "alt-text",
+        "inclusive-design",
+        "images",
+        "writing"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "blooms_level": "Analyze",
+      "license": "MIT",
+      "purpose": "Support inclusive teaching and digital accessibility through practice, comparison, and reflection.",
+      "ai_role": "AI helped generate practice image contexts and feedback patterns; accessibility staff reviewed guidance and examples.",
+      "human_review": "Reviewed for accessibility pedagogy and context-sensitive description guidance.",
+      "accessibility_notes": "Tool content itself models accessible image-description practice and keyboard flow."
+    }
+  ]
+}
