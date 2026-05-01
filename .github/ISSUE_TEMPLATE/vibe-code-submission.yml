@@ -2,8 +2,196 @@ name: Vibe-Coded Application Submission
 description: Submit an interactive, AI-assisted web application for review.
 title: "[Submission]: "
 labels: ["submission", "needs-review", "vibe-code-app"]
+
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for submitting an interactive application...
+        Use this form to submit an interactive, browser-based application for review in the Lewis University Library AI Vibe Code Repository.
+
+  - type: input
+    id: app-title
+    attributes:
+      label: Application title
+      description: Public-facing title of the app.
+      placeholder: Clinical Scenario Builder
+    validations:
+      required: true
+
+  - type: input
+    id: app-id
+    attributes:
+      label: Repository/app ID
+      description: Lowercase, hyphenated identifier.
+      placeholder: clinical-scenario-builder
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Application description
+      description: Describe what the app does, who it serves, and how it supports teaching, learning, research, student support, or institutional work.
+      placeholder: This interactive application helps users...
+    validations:
+      required: true
+
+  - type: input
+    id: author
+    attributes:
+      label: Primary contributor
+      placeholder: Name, role/title
+    validations:
+      required: true
+
+  - type: input
+    id: department
+    attributes:
+      label: Department or unit
+      placeholder: Library, Nursing, Biology, English, Student Success, etc.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: disciplines
+    attributes:
+      label: Discipline area
+      multiple: true
+      options:
+        - All Disciplines
+        - Nursing
+        - Natural Sciences
+        - Humanities
+        - Social Sciences
+        - Aviation & Transportation
+        - Mathematics & Statistics
+        - Computer Science & IT
+        - Business
+        - Education
+        - Criminal Justice
+        - Interdisciplinary
+    validations:
+      required: true
+
+  - type: dropdown
+    id: content-type
+    attributes:
+      label: Application type
+      options:
+        - Decision Tool
+        - Simulation
+        - Visualization
+        - Reference Tool
+        - Interactive Lab
+        - Analysis Tool
+        - Creation Tool
+        - Calculator
+        - Game
+        - Discussion Tool
+        - Student Support
+        - Faculty Development
+        - Workflow Tool
+        - Accessibility Tool
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - Course-Level
+        - Department-Level
+        - College-Level
+        - University-Wide
+        - Public / Cross-Institutional
+        - Prototype / Pilot
+    validations:
+      required: true
+
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Primary audience
+      multiple: true
+      options:
+        - Students
+        - Faculty
+        - Staff
+        - Librarians
+        - Researchers
+        - Administrators
+        - Public Users
+    validations:
+      required: true
+
+  - type: input
+    id: ai-tools
+    attributes:
+      label: AI tools used
+      placeholder: ChatGPT, Claude, GitHub Copilot, Cursor, Replit, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: vibe-coding-process
+    attributes:
+      label: Vibe-coding process
+      description: Explain how human expertise, prompting, iteration, testing, and revision shaped the final app.
+      placeholder: The app began with a local teaching/workflow need...
+    validations:
+      required: true
+
+  - type: input
+    id: live-url
+    attributes:
+      label: Live application URL
+      placeholder: https://...
+    validations:
+      required: false
+
+  - type: input
+    id: source-url
+    attributes:
+      label: Source repository URL
+      placeholder: https://github.com/...
+    validations:
+      required: false
+
+  - type: input
+    id: license
+    attributes:
+      label: Preferred license
+      placeholder: MIT, CC BY 4.0, CC BY-NC 4.0, etc.
+    validations:
+      required: false
+
+  - type: textarea
+    id: tags
+    attributes:
+      label: Suggested tags
+      description: Lowercase, hyphenated tags separated by commas.
+      placeholder: nursing, simulation, clinical-reasoning, student-practice
+    validations:
+      required: false
+
+  - type: textarea
+    id: accessibility-privacy
+    attributes:
+      label: Accessibility, privacy, and review notes
+      description: Note accessibility testing, privacy concerns, known limitations, or data-handling issues.
+      placeholder: The app does not collect user data. Keyboard navigation has been tested...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Submission acknowledgements
+      options:
+        - label: I confirm this application is appropriate for public or institutional review.
+          required: true
+        - label: I confirm that sensitive, student, patient, proprietary, or private data has been removed.
+          required: true
+        - label: I understand that reviewers may request revisions before publication.
+          required: true
