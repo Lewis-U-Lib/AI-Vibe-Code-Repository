@@ -1,0 +1,1286 @@
+{
+  "schema_version": "1.2",
+  "repository": "Lewis University Library AI Vibe Code Repository",
+  "description": "Prototype application dataset using the canonical AI Vibe Code Repository metadata model. Every project record is a browser-based, AI-assisted interactive application placeholder designed to stand in for future submitted apps.",
+  "categories": {
+    "Decision Tool": {
+      "icon": "🧭",
+      "color": "var(--catFramework)"
+    },
+    "Simulation": {
+      "icon": "🩺",
+      "color": "var(--catApp)"
+    },
+    "Visualization": {
+      "icon": "📈",
+      "color": "var(--catGuide)"
+    },
+    "Reference Tool": {
+      "icon": "🔎",
+      "color": "var(--catPrompt)"
+    },
+    "Interactive Lab": {
+      "icon": "🧪",
+      "color": "var(--catRubric)"
+    },
+    "Analysis Tool": {
+      "icon": "🧠",
+      "color": "var(--catPolicy)"
+    },
+    "Creation Tool": {
+      "icon": "✍️",
+      "color": "var(--catWorkflow)"
+    },
+    "Calculator": {
+      "icon": "🧮",
+      "color": "var(--catGov)"
+    },
+    "Game": {
+      "icon": "🎮",
+      "color": "var(--catInterdisc)"
+    },
+    "Discussion Tool": {
+      "icon": "💬",
+      "color": "var(--catPrompt)"
+    },
+    "Student Support": {
+      "icon": "🧑‍🎓",
+      "color": "var(--catLesson)"
+    },
+    "Faculty Development": {
+      "icon": "🎓",
+      "color": "var(--catGuide)"
+    },
+    "Workflow Tool": {
+      "icon": "🔄",
+      "color": "var(--catWorkflow)"
+    },
+    "Accessibility Tool": {
+      "icon": "♿",
+      "color": "var(--catFramework)"
+    }
+  },
+  "projects": [
+    {
+      "id": "assignment-ai-fit-checker",
+      "title": "Assignment AI Fit Checker",
+      "description": "An interactive decision tool that helps instructors decide whether a planned assignment should prohibit, permit, scaffold, or require AI use. The app asks about learning outcomes, evidence of student process, assessment risk, and transparency needs, then returns a recommendation with suggested syllabus language.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Library",
+      "role": "Repository steward",
+      "additional_contributors": [
+        "Center for Teaching and Learning Excellence"
+      ],
+      "disciplines": [
+        "All Disciplines",
+        "Education"
+      ],
+      "scope": "Course-Level",
+      "audience": [
+        "Faculty",
+        "Instructional Designers"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Claude",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Decision Tool",
+      "blooms_level": "Evaluate",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/assignment-ai-fit-checker/",
+      "source_url": "https://github.com/lewis-u-lib/assignment-ai-fit-checker",
+      "tags": [
+        "assignment-design",
+        "ai-literacy",
+        "assessment",
+        "syllabus"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "course": "Faculty Development",
+      "license": "MIT",
+      "purpose": "Support faculty decision-making about assignment-level AI use while keeping learning outcomes and transparency practices visible.",
+      "ai_role": "AI assisted with branching logic, interface language, and sample recommendation text; humans reviewed the pedagogical framing and institutional tone.",
+      "human_review": "Reviewed for clarity, academic-integrity nuance, and non-punitive teaching language.",
+      "accessibility_notes": "Keyboard-accessible form controls, high-contrast recommendations, aria-live result updates, and printable summary output.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": true
+    },
+    {
+      "id": "clinical-handoff-simulator",
+      "title": "Clinical Handoff Simulator",
+      "description": "A browser-based nursing simulation where students practice SBAR-style patient handoff communication. Learners choose what to report, receive immediate feedback, and compare their response against a model handoff that emphasizes prioritization, safety, and clinical reasoning.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Nursing",
+      "role": "Instructional prototype developer",
+      "disciplines": [
+        "Nursing",
+        "Health Sciences"
+      ],
+      "scope": "Course-Level",
+      "audience": [
+        "Students",
+        "Faculty"
+      ],
+      "ai_tools": [
+        "Claude",
+        "ChatGPT",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Simulation",
+      "blooms_level": "Apply",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/clinical-handoff-simulator/",
+      "source_url": "https://github.com/lewis-u-lib/clinical-handoff-simulator",
+      "tags": [
+        "nursing",
+        "simulation",
+        "sbar",
+        "clinical-reasoning"
+      ],
+      "status": "published",
+      "interdisciplinary": false,
+      "course": "NURS Clinical Communication",
+      "license": "MIT",
+      "purpose": "Give nursing students a low-risk environment for practicing patient handoff decisions before live clinical encounters.",
+      "ai_role": "AI drafted scenario variants, feedback prompts, and UI copy; faculty-style review refined clinical safety boundaries.",
+      "human_review": "Scenario content marked for nursing-faculty review before instructional deployment.",
+      "accessibility_notes": "Scenario steps use buttons and text feedback rather than timed interactions; no audio is required.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": true
+    },
+    {
+      "id": "lasallian-mission-map",
+      "title": "Lasallian Mission Map",
+      "description": "An interactive visualization that helps users connect programs, projects, and campus initiatives to Lasallian values. Users can filter by value, office, audience, and type of impact to see where mission-centered work converges across the university.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Library",
+      "disciplines": [
+        "Interdisciplinary",
+        "Social Sciences",
+        "Humanities"
+      ],
+      "scope": "University-Wide",
+      "audience": [
+        "Students",
+        "Faculty",
+        "Staff",
+        "Administrators"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Claude",
+        "SVG"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Visualization",
+      "blooms_level": "Analyze",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/lasallian-mission-map/",
+      "source_url": "https://github.com/lewis-u-lib/lasallian-mission-map",
+      "tags": [
+        "lasallian",
+        "mission",
+        "visualization",
+        "campus-impact"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "license": "MIT",
+      "purpose": "Make mission alignment visible by showing relationships among programs, values, populations served, and forms of impact.",
+      "ai_role": "AI helped translate a values framework into interactive filters, map labels, and sample graph relationships.",
+      "human_review": "Reviewed for respectful mission language and interpretive flexibility.",
+      "accessibility_notes": "Includes list-view alternatives to visual map relationships and avoids color-only meaning.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": true
+    },
+    {
+      "id": "research-source-triage-desk",
+      "title": "Research Source Triage Desk",
+      "description": "A reference-style app that guides students through first-pass source evaluation. Users answer questions about authority, evidence, purpose, recency, genre, and assignment fit, then receive a source-use recommendation and suggested next research move.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Library",
+      "role": "Information literacy designer",
+      "disciplines": [
+        "All Disciplines",
+        "Humanities",
+        "Social Sciences"
+      ],
+      "scope": "Assignment-Level",
+      "audience": [
+        "Students",
+        "Faculty",
+        "Librarians"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Reference Tool",
+      "blooms_level": "Evaluate",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/research-source-triage-desk/",
+      "source_url": "https://github.com/lewis-u-lib/research-source-triage-desk",
+      "tags": [
+        "information-literacy",
+        "source-evaluation",
+        "research",
+        "library"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "course": "First-Year Research",
+      "license": "MIT",
+      "purpose": "Help students make transparent, context-aware decisions about whether and how to use a source.",
+      "ai_role": "AI supported the question flow, feedback language, and alternative explanations for novice researchers.",
+      "human_review": "Reviewed by library-facing logic for alignment with information literacy instruction.",
+      "accessibility_notes": "Screen-reader-friendly form structure, clear headings, and result text that does not rely on icons.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    },
+    {
+      "id": "chemistry-buffer-lab-bench",
+      "title": "Chemistry Buffer Lab Bench",
+      "description": "An interactive lab app for exploring buffer behavior, pH shifts, and acid-base reasoning. Students adjust concentrations, compare predicted and observed changes, and receive prompts that connect calculations to molecular-level explanations.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Chemistry",
+      "disciplines": [
+        "Natural Sciences",
+        "Mathematics & Statistics"
+      ],
+      "scope": "Course-Level",
+      "audience": [
+        "Students",
+        "Faculty"
+      ],
+      "ai_tools": [
+        "Claude",
+        "ChatGPT",
+        "D3.js"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Interactive Lab",
+      "blooms_level": "Apply",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/chemistry-buffer-lab-bench/",
+      "source_url": "https://github.com/lewis-u-lib/chemistry-buffer-lab-bench",
+      "tags": [
+        "chemistry",
+        "interactive-lab",
+        "buffers",
+        "ph"
+      ],
+      "status": "published",
+      "interdisciplinary": false,
+      "course": "CHEM General Chemistry",
+      "license": "MIT",
+      "purpose": "Support conceptual and quantitative understanding of buffers through manipulable, visual experimentation.",
+      "ai_role": "AI drafted simulation states, instructional hints, and code scaffolding for formula-linked interactions.",
+      "human_review": "Chemistry faculty review recommended for numerical model accuracy before formal use.",
+      "accessibility_notes": "Numerical values are displayed in text alongside visual plots; controls include labels and keyboard support.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    },
+    {
+      "id": "qualitative-theme-weaver",
+      "title": "Qualitative Theme Weaver",
+      "description": "An analysis tool that helps students organize interview excerpts, field notes, or open-ended survey responses into emerging themes. Users drag excerpts into theme clusters, annotate rationale, and export a memo that preserves interpretive decisions.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Sociology",
+      "disciplines": [
+        "Social Sciences",
+        "Criminal Justice",
+        "Education"
+      ],
+      "scope": "Course-Level",
+      "audience": [
+        "Students",
+        "Faculty"
+      ],
+      "ai_tools": [
+        "Claude",
+        "ChatGPT",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Analysis Tool",
+      "blooms_level": "Analyze",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/qualitative-theme-weaver/",
+      "source_url": "https://github.com/lewis-u-lib/qualitative-theme-weaver",
+      "tags": [
+        "qualitative-methods",
+        "coding",
+        "themes",
+        "analysis"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "course": "Research Methods",
+      "license": "MIT",
+      "purpose": "Help learners practice transparent qualitative analysis while keeping human interpretation central.",
+      "ai_role": "AI suggested interface scaffolding and memo prompts; humans retained control over theme naming and interpretation.",
+      "human_review": "Reviewed for bias-aware language and clear warnings against uploading sensitive participant data.",
+      "accessibility_notes": "Provides non-drag keyboard alternatives for assigning excerpts to themes.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    },
+    {
+      "id": "poetry-linebreak-studio",
+      "title": "Poetry Linebreak Studio",
+      "description": "A creation tool that lets writers experiment with lineation, stanza breaks, pacing, and visual emphasis. The app displays multiple versions side by side and prompts users to explain how formal choices change voice, tone, and meaning.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "English",
+      "disciplines": [
+        "Humanities"
+      ],
+      "scope": "Assignment-Level",
+      "audience": [
+        "Students",
+        "Faculty"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Claude",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Creation Tool",
+      "blooms_level": "Create",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/poetry-linebreak-studio/",
+      "source_url": "https://github.com/lewis-u-lib/poetry-linebreak-studio",
+      "tags": [
+        "creative-writing",
+        "poetry",
+        "revision",
+        "lineation"
+      ],
+      "status": "published",
+      "interdisciplinary": false,
+      "course": "Creative Writing",
+      "license": "MIT",
+      "purpose": "Support poetic revision by making formal decisions visible, reversible, and reflective.",
+      "ai_role": "AI helped prototype layout interactions and reflective prompts; users generate and revise their own text.",
+      "human_review": "Reviewed for preserving writer agency and avoiding automated poem generation as the default activity.",
+      "accessibility_notes": "Uses editable text areas, side-by-side views that collapse responsively, and clear export text.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    },
+    {
+      "id": "aviation-fuel-planning-calculator",
+      "title": "Aviation Fuel Planning Calculator",
+      "description": "A training calculator that lets aviation students estimate fuel needs under changing route, reserve, weather, and payload conditions. It emphasizes reasoning transparency by showing the calculation path and highlighting assumptions that require instructor verification.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Aviation",
+      "disciplines": [
+        "Aviation & Transportation",
+        "Mathematics & Statistics"
+      ],
+      "scope": "Course-Level",
+      "audience": [
+        "Students",
+        "Faculty"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Calculator",
+      "blooms_level": "Apply",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/aviation-fuel-planning-calculator/",
+      "source_url": "https://github.com/lewis-u-lib/aviation-fuel-planning-calculator",
+      "tags": [
+        "aviation",
+        "calculator",
+        "fuel-planning",
+        "flight-training"
+      ],
+      "status": "published",
+      "interdisciplinary": false,
+      "course": "Aviation Operations",
+      "license": "MIT",
+      "purpose": "Offer a transparent practice environment for flight-planning calculations and assumption checking.",
+      "ai_role": "AI assisted with interface flow and explanatory labels; domain calculations are flagged for instructor validation.",
+      "human_review": "Requires aviation faculty review before any operational or safety-sensitive use.",
+      "accessibility_notes": "Inputs include labels, units, plain-language error states, and text explanation of outputs.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    },
+    {
+      "id": "citation-quest-game",
+      "title": "Citation Quest",
+      "description": "A game-based citation practice app where students identify missing metadata, choose citation moves, and repair flawed references. Levels gradually introduce article, book, website, and multimedia examples while explaining why each citation element matters.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Library",
+      "disciplines": [
+        "All Disciplines",
+        "Humanities"
+      ],
+      "scope": "Assignment-Level",
+      "audience": [
+        "Students",
+        "Librarians",
+        "Faculty"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Claude",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Game",
+      "blooms_level": "Apply",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/citation-quest-game/",
+      "source_url": "https://github.com/lewis-u-lib/citation-quest-game",
+      "tags": [
+        "citations",
+        "game",
+        "research-skills",
+        "library"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "course": "Library Instruction",
+      "license": "MIT",
+      "purpose": "Make citation practice more active, contextual, and feedback-rich for library instruction sessions.",
+      "ai_role": "AI generated sample metadata puzzles and feedback variations; librarians reviewed citation logic.",
+      "human_review": "Style examples marked as instructional approximations, not a replacement for style manuals.",
+      "accessibility_notes": "No timed penalties; all game feedback is text-readable and keyboard-operable.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    },
+    {
+      "id": "seminar-question-forge",
+      "title": "Seminar Question Forge",
+      "description": "A discussion tool that helps faculty and students transform readings into open-ended seminar questions. Users identify passage type, interpretive tension, and desired discussion move, then generate question sets for clarification, critique, synthesis, and application.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Philosophy",
+      "disciplines": [
+        "Humanities",
+        "Education",
+        "Social Sciences"
+      ],
+      "scope": "Course-Level",
+      "audience": [
+        "Students",
+        "Faculty"
+      ],
+      "ai_tools": [
+        "Claude",
+        "ChatGPT",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Discussion Tool",
+      "blooms_level": "Analyze",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/seminar-question-forge/",
+      "source_url": "https://github.com/lewis-u-lib/seminar-question-forge",
+      "tags": [
+        "discussion",
+        "seminar",
+        "reading",
+        "questions"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "course": "Seminar Courses",
+      "license": "MIT",
+      "purpose": "Support richer class discussion by helping users intentionally design questions around interpretive goals.",
+      "ai_role": "AI helped draft question stems and categorize discussion moves; instructors retain judgment over final use.",
+      "human_review": "Reviewed for open-endedness and avoidance of leading, single-answer prompts.",
+      "accessibility_notes": "Question outputs are copyable as plain text and organized under semantic headings.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    },
+    {
+      "id": "first-gen-campus-navigator",
+      "title": "First-Gen Campus Navigator",
+      "description": "A student-support app that guides first-generation students through campus resources based on immediate needs. Users choose concerns such as financial questions, research help, belonging, advising, or study planning, then receive warm handoff suggestions and next steps.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Student Support",
+      "disciplines": [
+        "Student Support",
+        "Interdisciplinary"
+      ],
+      "scope": "University-Wide",
+      "audience": [
+        "Students",
+        "Staff",
+        "Librarians"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Claude",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Student Support",
+      "blooms_level": "Understand",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/first-gen-campus-navigator/",
+      "source_url": "https://github.com/lewis-u-lib/first-gen-campus-navigator",
+      "tags": [
+        "student-support",
+        "first-generation",
+        "campus-resources",
+        "navigator"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "license": "MIT",
+      "purpose": "Reduce friction for students seeking help by turning resource discovery into a clear, supportive pathway.",
+      "ai_role": "AI assisted with branching pathways, supportive language, and resource-card structures.",
+      "human_review": "Requires ongoing review by student-support offices to keep links, service descriptions, and referrals current.",
+      "accessibility_notes": "Plain-language guidance, large touch targets, and non-stigmatizing language throughout.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": true
+    },
+    {
+      "id": "faculty-ai-literacy-trail",
+      "title": "Faculty AI Literacy Trail",
+      "description": "A faculty-development app that turns AI literacy into a self-paced pathway. Instructors choose their comfort level and teaching context, then receive modules on disclosure, assessment redesign, prompting, tool evaluation, and student-facing communication.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Library",
+      "disciplines": [
+        "All Disciplines",
+        "Education"
+      ],
+      "scope": "University-Wide",
+      "audience": [
+        "Faculty",
+        "Instructional Designers",
+        "Librarians"
+      ],
+      "ai_tools": [
+        "Claude",
+        "ChatGPT",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Faculty Development",
+      "blooms_level": "Multiple Levels",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/faculty-ai-literacy-trail/",
+      "source_url": "https://github.com/lewis-u-lib/faculty-ai-literacy-trail",
+      "tags": [
+        "faculty-development",
+        "ai-literacy",
+        "teaching",
+        "modules"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "course": "Faculty Development",
+      "license": "MIT",
+      "purpose": "Provide a self-paced, context-sensitive pathway for faculty building practical AI literacy.",
+      "ai_role": "AI drafted modular learning pathways and scenario prompts; humans aligned the flow with local teaching needs.",
+      "human_review": "Reviewed for discipline-flexible tone and non-alarmist treatment of AI adoption.",
+      "accessibility_notes": "Progress is stored locally, modules are text-first, and interactive checks provide accessible feedback.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": true
+    },
+    {
+      "id": "grant-narrative-workbench",
+      "title": "Grant Narrative Workbench",
+      "description": "A workflow app that helps research teams plan grant narratives by mapping problem statements, project activities, outcomes, evidence, partners, and assessment measures. The tool exports a planning brief that can be revised collaboratively.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Research Support",
+      "disciplines": [
+        "All Disciplines",
+        "Interdisciplinary"
+      ],
+      "scope": "Program-Level",
+      "audience": [
+        "Faculty",
+        "Staff",
+        "Administrators"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Claude",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Workflow Tool",
+      "blooms_level": "Create",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/grant-narrative-workbench/",
+      "source_url": "https://github.com/lewis-u-lib/grant-narrative-workbench",
+      "tags": [
+        "grants",
+        "workflow",
+        "research-support",
+        "planning"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "license": "MIT",
+      "purpose": "Help teams externalize grant logic before drafting full proposals.",
+      "ai_role": "AI assisted with prompt sequencing, export formatting, and examples of outcome-alignment language.",
+      "human_review": "Reviewed for planning support only; final grant narratives require expert review and funder-specific alignment.",
+      "accessibility_notes": "Autosaves locally, supports plain-text export, and uses step-by-step sections with clear labels.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    },
+    {
+      "id": "alt-text-studio",
+      "title": "Alt Text Studio",
+      "description": "An accessibility app that helps users practice writing useful alt text for charts, photographs, diagrams, and decorative images. It prompts for image purpose, audience, and surrounding context, then compares drafts against practical accessibility criteria.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Library",
+      "disciplines": [
+        "All Disciplines",
+        "Interdisciplinary"
+      ],
+      "scope": "University-Wide",
+      "audience": [
+        "Students",
+        "Faculty",
+        "Staff",
+        "Librarians"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Claude",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Accessibility Tool",
+      "blooms_level": "Apply",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/alt-text-studio/",
+      "source_url": "https://github.com/lewis-u-lib/alt-text-studio",
+      "tags": [
+        "accessibility",
+        "alt-text",
+        "inclusive-design",
+        "images"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "license": "MIT",
+      "purpose": "Build practical accessibility writing habits through guided comparison and revision.",
+      "ai_role": "AI helped draft instructional criteria and examples; users write and revise their own alt text.",
+      "human_review": "Reviewed for inclusive language and context-first accessibility guidance.",
+      "accessibility_notes": "The app itself is designed as a text-first practice environment with keyboard-operable examples.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": true
+    },
+    {
+      "id": "ethics-scenario-decision-lab",
+      "title": "Ethics Scenario Decision Lab",
+      "description": "A decision app that walks users through ambiguous ethical scenarios in classroom, research, workplace, or technology contexts. Users compare possible actions, identify affected stakeholders, and document the reasoning behind a chosen response.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Philosophy",
+      "disciplines": [
+        "Humanities",
+        "Business",
+        "Computer Science & IT",
+        "Health Sciences"
+      ],
+      "scope": "Course-Level",
+      "audience": [
+        "Students",
+        "Faculty"
+      ],
+      "ai_tools": [
+        "Claude",
+        "ChatGPT",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Decision Tool",
+      "blooms_level": "Evaluate",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/ethics-scenario-decision-lab/",
+      "source_url": "https://github.com/lewis-u-lib/ethics-scenario-decision-lab",
+      "tags": [
+        "ethics",
+        "decision-making",
+        "stakeholders",
+        "reflection"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "course": "Applied Ethics",
+      "license": "MIT",
+      "purpose": "Help students practice structured ethical reasoning without reducing ethical judgment to a formula.",
+      "ai_role": "AI generated scenario variants and reflection prompts; humans curated scenarios and emphasized interpretive humility.",
+      "human_review": "Reviewed for non-prescriptive ethical framing and classroom adaptability.",
+      "accessibility_notes": "Scenario choices are text-based and include reflective output for screen readers and printing.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    },
+    {
+      "id": "business-crisis-comms-simulator",
+      "title": "Business Crisis Comms Simulator",
+      "description": "A simulation where business students respond to a developing public-relations crisis. The app presents stakeholder updates, media pressure, internal constraints, and customer concerns, then gives feedback on tone, timing, transparency, and risk.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Business",
+      "disciplines": [
+        "Business",
+        "Social Sciences"
+      ],
+      "scope": "Course-Level",
+      "audience": [
+        "Students",
+        "Faculty"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Claude",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Simulation",
+      "blooms_level": "Evaluate",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/business-crisis-comms-simulator/",
+      "source_url": "https://github.com/lewis-u-lib/business-crisis-comms-simulator",
+      "tags": [
+        "business",
+        "communication",
+        "simulation",
+        "crisis"
+      ],
+      "status": "published",
+      "interdisciplinary": false,
+      "course": "Business Communication",
+      "license": "MIT",
+      "purpose": "Let students practice strategic communication decisions as a crisis scenario evolves.",
+      "ai_role": "AI drafted branching updates, stakeholder profiles, and feedback text; instructors can revise scenario values.",
+      "human_review": "Reviewed for teachable ambiguity and avoidance of a single perfect answer.",
+      "accessibility_notes": "No timed response requirement; scenario updates are presented as text cards.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    },
+    {
+      "id": "library-impact-dashboard",
+      "title": "Library Impact Dashboard",
+      "description": "A visualization app that turns library activity data into readable stories about instruction, consultations, collection use, and research support. Users can filter by semester, audience, service type, and academic unit to explore patterns.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Library",
+      "disciplines": [
+        "All Disciplines",
+        "Mathematics & Statistics"
+      ],
+      "scope": "University-Wide",
+      "audience": [
+        "Librarians",
+        "Administrators",
+        "Faculty"
+      ],
+      "ai_tools": [
+        "Claude",
+        "D3.js",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Visualization",
+      "blooms_level": "Analyze",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/library-impact-dashboard/",
+      "source_url": "https://github.com/lewis-u-lib/library-impact-dashboard",
+      "tags": [
+        "library",
+        "dashboard",
+        "assessment",
+        "visualization"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "license": "MIT",
+      "purpose": "Make library impact legible for planning, reporting, and cross-campus communication.",
+      "ai_role": "AI assisted with dashboard layout and plain-language data-story captions; humans define metrics and data sources.",
+      "human_review": "Reviewed for avoiding overclaiming and for separating example data from real institutional data.",
+      "accessibility_notes": "Charts include text summaries, table equivalents, and non-color visual distinctions.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    },
+    {
+      "id": "ai-disclosure-builder",
+      "title": "AI Disclosure Builder",
+      "description": "A reference app that helps students and faculty draft clear AI-use disclosures for coursework, presentations, and project documentation. Users select what AI helped with, what was human-authored, and what verification steps were completed.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Library",
+      "disciplines": [
+        "All Disciplines"
+      ],
+      "scope": "University-Wide",
+      "audience": [
+        "Students",
+        "Faculty",
+        "Librarians"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Claude",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Reference Tool",
+      "blooms_level": "Understand",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/ai-disclosure-builder/",
+      "source_url": "https://github.com/lewis-u-lib/ai-disclosure-builder",
+      "tags": [
+        "ai-disclosure",
+        "transparency",
+        "documentation",
+        "academic-integrity"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "license": "MIT",
+      "purpose": "Normalize transparent AI-use documentation without treating every use case as identical.",
+      "ai_role": "AI drafted sample disclosure variations; humans tuned the language for clarity and local teaching contexts.",
+      "human_review": "Reviewed for flexible, non-punitive transparency language.",
+      "accessibility_notes": "Includes labeled checkboxes, generated text summaries, and copy-to-clipboard alternatives.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": true
+    },
+    {
+      "id": "physics-motion-lab",
+      "title": "Physics Motion Lab",
+      "description": "An interactive lab that lets students manipulate position, velocity, acceleration, friction, and force variables. The app links graphs to animated motion so learners can test predictions and explain changes in multiple representations.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Physics",
+      "disciplines": [
+        "Natural Sciences",
+        "Mathematics & Statistics"
+      ],
+      "scope": "Course-Level",
+      "audience": [
+        "Students",
+        "Faculty"
+      ],
+      "ai_tools": [
+        "Claude",
+        "ChatGPT",
+        "Canvas API"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Interactive Lab",
+      "blooms_level": "Apply",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/physics-motion-lab/",
+      "source_url": "https://github.com/lewis-u-lib/physics-motion-lab",
+      "tags": [
+        "physics",
+        "motion",
+        "interactive-lab",
+        "graphs"
+      ],
+      "status": "published",
+      "interdisciplinary": false,
+      "course": "Introductory Physics",
+      "license": "MIT",
+      "purpose": "Connect motion graphs, equations, and conceptual reasoning through interactive experimentation.",
+      "ai_role": "AI helped prototype graph-linked animation and explanatory prompts; physics review is needed for exact modeling.",
+      "human_review": "Model assumptions are documented for instructor review and course-level adaptation.",
+      "accessibility_notes": "Graph values are presented numerically and animations are controllable, pauseable, and nonessential.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    },
+    {
+      "id": "argument-map-analyzer",
+      "title": "Argument Map Analyzer",
+      "description": "An analysis app that helps students decompose essays, op-eds, or policy arguments into claims, reasons, evidence, warrants, and objections. Users can build a map, identify weak links, and export a revision plan.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "English",
+      "disciplines": [
+        "Humanities",
+        "Social Sciences",
+        "Education"
+      ],
+      "scope": "Assignment-Level",
+      "audience": [
+        "Students",
+        "Faculty"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Claude",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Analysis Tool",
+      "blooms_level": "Analyze",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/argument-map-analyzer/",
+      "source_url": "https://github.com/lewis-u-lib/argument-map-analyzer",
+      "tags": [
+        "argument",
+        "writing",
+        "analysis",
+        "revision"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "course": "First-Year Writing",
+      "license": "MIT",
+      "purpose": "Support argument analysis and revision by making reasoning structures visible.",
+      "ai_role": "AI assisted with map categories and feedback prompts; users supply and interpret the argument content.",
+      "human_review": "Reviewed for writing-center compatibility and non-automated assessment use.",
+      "accessibility_notes": "Offers list-based map editing in addition to visual node layout.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    },
+    {
+      "id": "lesson-activity-generator-studio",
+      "title": "Lesson Activity Generator Studio",
+      "description": "A creation app that helps instructors design active-learning activities aligned to outcomes, class size, timing, materials, and AI-use boundaries. The app returns a reusable activity card with facilitation steps and reflection prompts.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Education",
+      "disciplines": [
+        "Education",
+        "All Disciplines"
+      ],
+      "scope": "Course-Level",
+      "audience": [
+        "Faculty",
+        "Instructional Designers",
+        "Librarians"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Claude",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Creation Tool",
+      "blooms_level": "Create",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/lesson-activity-generator-studio/",
+      "source_url": "https://github.com/lewis-u-lib/lesson-activity-generator-studio",
+      "tags": [
+        "lesson-design",
+        "active-learning",
+        "teaching",
+        "faculty"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "course": "Faculty Development",
+      "license": "MIT",
+      "purpose": "Help instructors rapidly sketch active-learning activities while keeping outcomes and constraints explicit.",
+      "ai_role": "AI helped draft activity patterns, constraint logic, and facilitation language.",
+      "human_review": "Reviewed for adaptability and avoidance of one-size-fits-all teaching prescriptions.",
+      "accessibility_notes": "Activity cards are plain-text exportable and include accessibility planning prompts.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    },
+    {
+      "id": "statistics-sampling-calculator",
+      "title": "Statistics Sampling Calculator",
+      "description": "A calculator app that helps students explore sampling error, confidence intervals, and sample-size tradeoffs. Users adjust assumptions and see how design choices change uncertainty, interpretation, and communication.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Mathematics",
+      "disciplines": [
+        "Mathematics & Statistics",
+        "Social Sciences",
+        "Business"
+      ],
+      "scope": "Course-Level",
+      "audience": [
+        "Students",
+        "Faculty"
+      ],
+      "ai_tools": [
+        "Claude",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Calculator",
+      "blooms_level": "Analyze",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/statistics-sampling-calculator/",
+      "source_url": "https://github.com/lewis-u-lib/statistics-sampling-calculator",
+      "tags": [
+        "statistics",
+        "calculator",
+        "sampling",
+        "confidence-intervals"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "course": "Introductory Statistics",
+      "license": "MIT",
+      "purpose": "Make statistical uncertainty more visible by connecting formula outputs to interpretation prompts.",
+      "ai_role": "AI assisted with UI copy and explanatory scenarios; statistical formulas require instructor confirmation.",
+      "human_review": "Reviewed for instructional framing and warning text around assumptions.",
+      "accessibility_notes": "Outputs include text summaries and exact values in addition to visual indicators.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    },
+    {
+      "id": "data-privacy-escape-room",
+      "title": "Data Privacy Escape Room",
+      "description": "A game-style learning app where users solve privacy and data-handling puzzles to unlock the next room. Scenarios include file sharing, public AI tools, sensitive data, passwords, and consent-aware documentation.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Computer Science & IT",
+      "disciplines": [
+        "Computer Science & IT",
+        "Business",
+        "All Disciplines"
+      ],
+      "scope": "University-Wide",
+      "audience": [
+        "Students",
+        "Faculty",
+        "Staff"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Claude",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Game",
+      "blooms_level": "Apply",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/data-privacy-escape-room/",
+      "source_url": "https://github.com/lewis-u-lib/data-privacy-escape-room",
+      "tags": [
+        "privacy",
+        "game",
+        "data-security",
+        "ai-literacy"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "license": "MIT",
+      "purpose": "Teach practical data privacy habits through memorable, scenario-based problem solving.",
+      "ai_role": "AI helped create puzzle structures and feedback messages; humans reviewed risk language and campus relevance.",
+      "human_review": "Requires IT/privacy review for alignment with current institutional policy before deployment.",
+      "accessibility_notes": "Puzzles have hints, no hard time limit, and text alternatives for visual clues.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    },
+    {
+      "id": "community-dialogue-circle-builder",
+      "title": "Community Dialogue Circle Builder",
+      "description": "A discussion tool that helps facilitators design respectful dialogue sessions around complex topics. It guides users through purpose, shared agreements, opening questions, participant roles, reflection moments, and closure.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Student Engagement",
+      "disciplines": [
+        "Social Sciences",
+        "Humanities",
+        "Interdisciplinary"
+      ],
+      "scope": "Public / Community",
+      "audience": [
+        "Students",
+        "Faculty",
+        "Staff",
+        "Public / Community"
+      ],
+      "ai_tools": [
+        "Claude",
+        "ChatGPT",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Discussion Tool",
+      "blooms_level": "Evaluate",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/community-dialogue-circle-builder/",
+      "source_url": "https://github.com/lewis-u-lib/community-dialogue-circle-builder",
+      "tags": [
+        "dialogue",
+        "facilitation",
+        "community",
+        "reflection"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "license": "MIT",
+      "purpose": "Support thoughtful facilitation planning for dialogue across difference.",
+      "ai_role": "AI helped draft facilitation options and reflection prompts; humans reviewed for care-centered tone.",
+      "human_review": "Reviewed for conflict-sensitive language and non-carceral facilitation framing.",
+      "accessibility_notes": "Exports a plain-language facilitation plan and includes accessibility planning prompts for events.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    },
+    {
+      "id": "commuter-student-week-planner",
+      "title": "Commuter Student Week Planner",
+      "description": "A student-support app that helps commuter students build realistic weekly study, work, travel, and campus-engagement plans. Users add constraints and goals, then receive a schedule map with small, actionable next steps.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Student Support",
+      "disciplines": [
+        "Student Support",
+        "Interdisciplinary"
+      ],
+      "scope": "University-Wide",
+      "audience": [
+        "Students",
+        "Staff"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Student Support",
+      "blooms_level": "Apply",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/commuter-student-week-planner/",
+      "source_url": "https://github.com/lewis-u-lib/commuter-student-week-planner",
+      "tags": [
+        "student-support",
+        "commuter-students",
+        "planning",
+        "wellbeing"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "license": "MIT",
+      "purpose": "Help commuter students make campus engagement and academic planning more manageable.",
+      "ai_role": "AI helped design planning prompts and supportive micro-step language.",
+      "human_review": "Reviewed for practical, nonjudgmental student-support language.",
+      "accessibility_notes": "Planner output is text-based, editable, printable, and not dependent on drag-and-drop.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    },
+    {
+      "id": "rubric-feedback-calibrator",
+      "title": "Rubric Feedback Calibrator",
+      "description": "A faculty-development app that helps instructors calibrate feedback tone, specificity, and rubric alignment. Users paste or draft feedback, compare it to rubric criteria, and revise it toward actionable, student-centered language.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Center for Teaching and Learning Excellence",
+      "disciplines": [
+        "Education",
+        "All Disciplines"
+      ],
+      "scope": "Course-Level",
+      "audience": [
+        "Faculty",
+        "Instructional Designers"
+      ],
+      "ai_tools": [
+        "Claude",
+        "ChatGPT",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Faculty Development",
+      "blooms_level": "Evaluate",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/rubric-feedback-calibrator/",
+      "source_url": "https://github.com/lewis-u-lib/rubric-feedback-calibrator",
+      "tags": [
+        "feedback",
+        "rubrics",
+        "faculty-development",
+        "assessment"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "course": "Faculty Development",
+      "license": "MIT",
+      "purpose": "Support consistent, actionable feedback practices that connect comments to assessment criteria.",
+      "ai_role": "AI helped generate feedback dimensions and revision prompts; instructors retain control of final comments.",
+      "human_review": "Reviewed for student-centered language and avoidance of automated grading claims.",
+      "accessibility_notes": "Uses text comparison panels with headings and avoids color-only differences.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    },
+    {
+      "id": "archive-exhibit-planner",
+      "title": "Archive Exhibit Planner",
+      "description": "A workflow app that helps students and librarians plan a digital exhibit from archival materials. Users define a theme, select objects, draft interpretive labels, sequence sections, and export a build-ready exhibit outline.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Library",
+      "disciplines": [
+        "Humanities",
+        "Interdisciplinary"
+      ],
+      "scope": "Course-Level",
+      "audience": [
+        "Students",
+        "Librarians",
+        "Faculty"
+      ],
+      "ai_tools": [
+        "ChatGPT",
+        "Claude",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Workflow Tool",
+      "blooms_level": "Create",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/archive-exhibit-planner/",
+      "source_url": "https://github.com/lewis-u-lib/archive-exhibit-planner",
+      "tags": [
+        "archives",
+        "digital-exhibit",
+        "workflow",
+        "humanities"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "course": "Digital Humanities",
+      "license": "MIT",
+      "purpose": "Help users translate archival research into structured, audience-aware digital exhibits.",
+      "ai_role": "AI assisted with exhibit-planning prompts and label-writing scaffolds; humans curate objects and interpretations.",
+      "human_review": "Reviewed for ethical description, attribution reminders, and archival context.",
+      "accessibility_notes": "Includes alt-text prompts and plain-text exhibit outline export.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    },
+    {
+      "id": "color-contrast-coach",
+      "title": "Color Contrast Coach",
+      "description": "An accessibility app that lets users test text and background color combinations, preview them in realistic interface components, and receive suggestions for improving contrast and readability.",
+      "author": "Lewis University Library Prototype Team",
+      "department": "Library",
+      "disciplines": [
+        "Computer Science & IT",
+        "All Disciplines"
+      ],
+      "scope": "University-Wide",
+      "audience": [
+        "Students",
+        "Faculty",
+        "Staff",
+        "Librarians"
+      ],
+      "ai_tools": [
+        "Claude",
+        "Vanilla JS"
+      ],
+      "format": "Interactive Application",
+      "content_type": "Accessibility Tool",
+      "blooms_level": "Apply",
+      "date_submitted": "2026-05-01",
+      "live_url": "https://lewis-u-lib.github.io/ai-vibe-code-repository/apps/color-contrast-coach/",
+      "source_url": "https://github.com/lewis-u-lib/color-contrast-coach",
+      "tags": [
+        "accessibility",
+        "contrast",
+        "web-design",
+        "inclusive-design"
+      ],
+      "status": "published",
+      "interdisciplinary": true,
+      "license": "MIT",
+      "purpose": "Give campus creators a quick, teachable way to check visual accessibility in web and document design.",
+      "ai_role": "AI assisted with UI states, explanatory microcopy, and contrast-result messaging.",
+      "human_review": "Reviewed for plain-language accessibility guidance and non-color-only status indicators.",
+      "accessibility_notes": "The app practices its own guidance with high-contrast defaults and text-based pass/fail output.",
+      "maintenance_contact": "library-ai-repository@lewisu.edu",
+      "featured": false
+    }
+  ]
+}
