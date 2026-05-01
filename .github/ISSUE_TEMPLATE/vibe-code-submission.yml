@@ -1,0 +1,9 @@
+name: Vibe-Coded Application Submission
+description: Submit an interactive, AI-assisted web application for review.
+title: "[Submission]: "
+labels: ["submission", "needs-review", "vibe-code-app"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for submitting an interactive application...
