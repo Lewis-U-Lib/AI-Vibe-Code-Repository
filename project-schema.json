@@ -1,0 +1,268 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Lewis University Library AI Vibe Code Repository — Project Schema",
+  "description": "Canonical metadata schema for one project in the Lewis University Library AI Vibe Code Repository. Each record describes a browser-based, AI-assisted interactive application and documents its purpose, contributors, AI-assisted build process, source pathway, publication status, and discovery metadata.",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "description",
+    "author",
+    "department",
+    "disciplines",
+    "scope",
+    "ai_tools",
+    "format",
+    "content_type",
+    "date_submitted",
+    "live_url",
+    "source_url",
+    "tags",
+    "status",
+    "purpose",
+    "ai_role"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "URL-safe unique identifier, ideally matching the GitHub repository slug.",
+      "examples": [
+        "clinical-scenario-builder"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 120,
+      "description": "Public title shown in the repository gallery."
+    },
+    "description": {
+      "type": "string",
+      "minLength": 30,
+      "maxLength": 700,
+      "description": "Card-ready description of what the application does, who it serves, and why it matters."
+    },
+    "author": {
+      "type": "string",
+      "description": "Primary contributor or contributing team."
+    },
+    "department": {
+      "type": "string",
+      "description": "Lewis University department, office, college, or unit connected to the project."
+    },
+    "role": {
+      "type": "string",
+      "description": "Contributor role or collaboration type.",
+      "examples": [
+        "Faculty",
+        "Student with faculty endorsement",
+        "Librarian",
+        "Staff",
+        "Faculty / Librarian Collaboration"
+      ]
+    },
+    "additional_contributors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Other contributors or reviewers."
+    },
+    "disciplines": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "All Disciplines",
+          "Nursing",
+          "Health Sciences",
+          "Natural Sciences",
+          "Humanities",
+          "Social Sciences",
+          "Aviation & Transportation",
+          "Mathematics & Statistics",
+          "Computer Science & IT",
+          "Business",
+          "Education",
+          "Criminal Justice",
+          "Student Support",
+          "Interdisciplinary"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true,
+      "description": "Disciplinary tags used for filtering and discovery."
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "Assignment-Level",
+        "Course-Level",
+        "Program-Level",
+        "Department-Level",
+        "College-Level",
+        "University-Wide",
+        "Public / Community"
+      ],
+      "description": "Primary implementation scale."
+    },
+    "audience": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Students",
+          "Faculty",
+          "Librarians",
+          "Staff",
+          "Administrators",
+          "Instructional Designers",
+          "Public / Community"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true,
+      "description": "Primary users or beneficiaries."
+    },
+    "ai_tools": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true,
+      "description": "AI tools or coding assistants used in the build process."
+    },
+    "format": {
+      "type": "string",
+      "enum": [
+        "Interactive Application"
+      ],
+      "default": "Interactive Application",
+      "description": "The repository is scoped to interactive browser-based applications."
+    },
+    "content_type": {
+      "type": "string",
+      "enum": [
+        "Decision Tool",
+        "Simulation",
+        "Visualization",
+        "Reference Tool",
+        "Interactive Lab",
+        "Analysis Tool",
+        "Creation Tool",
+        "Calculator",
+        "Game",
+        "Discussion Tool",
+        "Student Support",
+        "Faculty Development",
+        "Workflow Tool",
+        "Accessibility Tool"
+      ],
+      "description": "Application type shown as the gallery category."
+    },
+    "blooms_level": {
+      "type": "string",
+      "enum": [
+        "Remember",
+        "Understand",
+        "Apply",
+        "Analyze",
+        "Evaluate",
+        "Create",
+        "Multiple Levels"
+      ],
+      "description": "Primary Bloom's Taxonomy level for instructional apps."
+    },
+    "date_submitted": {
+      "type": "string",
+      "format": "date",
+      "description": "Date submitted for repository review, formatted YYYY-MM-DD."
+    },
+    "live_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Public URL for the deployed application."
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Public source repository or code archive URL."
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      },
+      "minItems": 3,
+      "maxItems": 12,
+      "uniqueItems": true,
+      "description": "Lowercase, hyphenated discovery terms."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "in-review",
+        "published",
+        "archived"
+      ],
+      "description": "Publication workflow state. Only published projects should appear in the public gallery."
+    },
+    "interdisciplinary": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the project intentionally crosses disciplines, departments, or user groups."
+    },
+    "course": {
+      "type": "string",
+      "description": "Course number/name if the app was built for a specific course."
+    },
+    "license": {
+      "type": "string",
+      "default": "MIT",
+      "description": "Source or content license selected by the contributor.",
+      "examples": [
+        "MIT",
+        "Apache-2.0",
+        "GPL-3.0",
+        "CC-BY-NC-SA-4.0"
+      ]
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 20,
+      "description": "Pedagogical, research, service, or workflow need the application addresses."
+    },
+    "ai_role": {
+      "type": "string",
+      "minLength": 20,
+      "description": "Narrative description of how AI assisted the build and how human expertise shaped the result."
+    },
+    "human_review": {
+      "type": "string",
+      "description": "Human review, testing, or validation completed before submission."
+    },
+    "accessibility_notes": {
+      "type": "string",
+      "description": "Accessibility considerations, checks, or known limitations."
+    },
+    "screenshot": {
+      "type": "string",
+      "description": "Relative path or URL to a project preview image."
+    },
+    "maintenance_contact": {
+      "type": "string",
+      "description": "Optional contact person/team for updates or broken links."
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Optional flag for curated display."
+    }
+  }
+}
